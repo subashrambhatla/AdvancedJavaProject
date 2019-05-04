@@ -1,0 +1,825 @@
+html, body{
+    height:100%;
+    /*min-height: 100vh;*/
+}
+body{
+    background: #f4f5f7;
+    font-family: 'Oxygen', sans-serif;   
+    background-size: auto;
+}
+.m-b-15{
+    margin-bottom: 15px;
+}
+.p-r-0{
+    padding-right: 0;
+}
+.p-l-0{
+    padding-left: 0;
+}
+.lading-page, .cheque-details{
+    height: 100%
+}
+.lading-page .logo-section{
+    height:50%;
+    display: table;
+    width: 100%;
+}
+.lading-page .logo-section .logo{
+    display: table-cell;
+    vertical-align: middle;
+}
+.lading-page .logo-section .logo img{
+    margin: 0 auto;
+    display: block;
+    width:25%;
+}
+.lading-page .category{
+    height: 50%;
+}
+.lading-page .category .category-list {
+    width: 650px;
+    margin: 0 auto;
+}
+.lading-page .category .category-list a:hover, 
+.lading-page .category .category-list a:focus
+{
+    text-decoration: none;
+}
+.lading-page .category .category-list .category1,
+.lading-page .category .category-list .category2
+{
+    border:2px solid #fff;
+    padding: 44px;
+    background-color: #1d4f92;   
+    border-radius: 8px; 
+    text-align:center;    
+}
+.lading-page .category .category-list .title{
+    color: #000;
+    font-size: 18px;
+    text-align: center;
+    margin: 12px 0;
+}
+/*************/
+.cheque-details .page-header{
+    background: #102f97;
+    margin: 0;
+    padding: 10px;
+    border-bottom: 0;
+    position: relative;
+    height: 45px;
+}
+.cheque-details .page-header .title{
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+}
+.cheque-details .page-header .left-arrow{
+    position: absolute;
+    top:12px;
+}
+.cheque-details .inner-content{
+    padding: 20px;
+    height: calc(100% - 45px);
+    overflow:scroll;
+}
+.cheque-details .inner-content .banks-list, 
+.cheque-details .inner-content .bank-details{
+    padding: 20px;
+    background: #fff;
+    margin-bottom: 20px;  
+    border:1px solid #d1d1d1; 
+    border-radius: 7px;
+}
+.cheque-details .inner-content .bank-details form label,
+.cheque-details .inner-content .banks-list form label
+{
+    color: #000;
+    font-size: 16px;
+}
+.cheque-details .inner-content .banks-list form .form-control,
+.cheque-details .inner-content .bank-details form .form-control{
+    border-radius: 0;
+}
+.cheque-details .inner-content .bank-details form .input-group-addon{
+    border-radius: 0;
+}
+.cheque-details .inner-content .submit_btn{
+  text-align: center;
+}
+.cheque-details .inner-content input[type=button]{
+    width: 150px;
+    background-color: #1d4f92;
+    color:#fff;
+    text-transform: uppercase;
+    border:0;
+    border-radius: 3px;
+    padding: 12px; 
+}
+/***/
+.aub-cheque, .cheque-list{
+    height: calc(100% - 45px);    
+    width: 100%;
+    overflow: scroll;
+    display: table;
+}
+.aub-cheque .aub-cheque-from{
+    display: table-cell;
+    vertical-align: middle;  
+    padding: 0 20px;
+}
+.aub-cheque .aub-cheque-from .auq-cheque-type{
+  /* border:5px solid #c1c8ff;*/
+}
+.aub-cheque .aub-cheque-from .auq-cheque-type .auq-cheque-format{
+    /*background-color: #dadeff;
+    border:1px solid #787d9f;*/
+    padding: 10px;
+    position: relative;
+}
+.aub-cheque .aub-cheque-from .auq-cheque-type .auq-cheque-format .cheque-code{
+    position: absolute;
+    width: 150px;
+    bottom: 20px;
+}
+.aub-cheque .aub-cheque-from .auq-cheque-type .auq-cheque-format .cheque-code img{
+    width: 100%;
+}
+.aub-cheque .aub-cheque-from .auq-cheque-type .auq-cheque-format .date{
+    display: table;
+    width: 100%;
+    margin-top: 7px;
+}
+.aub-cheque .aub-cheque-from .auq-cheque-type .auq-cheque-format .date label{
+    font-size: 12px;
+    color: #000;    
+    width: 20%;
+    float: left;
+}
+.aub-cheque .aub-cheque-from .auq-cheque-type .auq-cheque-format .date table {
+  width: 80%;
+  float: left;
+  margin: 0
+}
+.aub-cheque .aub-cheque-from .auq-cheque-type .auq-cheque-format .date table tr td{
+   border:1px solid #cccccc;
+   padding: 0 5px;
+}
+.aub-cheque .aub-cheque-from .auq-cheque-type .auq-cheque-format label{
+    font-size: 12px;
+}
+.aub-cheque .aub-cheque-from .auq-cheque-type .auq-cheque-format p{
+    font-size: 12px;
+    border-bottom: 1px solid #aeb2cc;
+    color: #7d8cff;
+    height: 17px;
+}
+.aub-cheque .aub-cheque-from .auq-cheque-type .auq-cheque-format .rupess-letter{    
+    border:1px solid #cccccc;
+    color: #7d8cff;   
+    width: 100%;
+    line-height: 25px;
+    margin-top: 15px;
+    font-weight: normal;
+  
+}
+.aub-cheque .aub-cheque-from .auq-cheque-type .auq-cheque-format .currency-type{
+    color: #000;
+    margin: 0 5px;
+}
+.aub-cheque .aub-cheque-from .signature-img{
+    height: 40px;
+}
+.aub-cheque .aub-cheque-from .signature{
+    border-top: 1px solid #aeb2cc;
+    margin-top: 7px;
+}
+.aub-cheque .aub-cheque-from .submit_btn{
+    text-align: center;
+    margin-top: 30px;
+}
+.aub-cheque .aub-cheque-from .submit_btn input[type=submit],
+.aub-cheque .aub-cheque-from .submit_btn input[type=button]
+{
+    width: 150px;
+    background-color: #1d4f92;
+    color:#fff;
+    text-transform: uppercase;
+    border:0;
+    border-radius: 3px;
+    padding: 12px;    
+}
+.aub-cheque .aub-cheque-from .check-holder-name{   
+    width: 115px;
+    float: left;  
+}
+.aub-cheque .aub-cheque-from p.name{
+    width: calc(100% - 150px);
+    float: left;
+    padding-left: 5px;
+}
+.aub-cheque .aub-cheque-from .currency{
+    width: 90px;
+    float: left;  
+}
+.aub-cheque .aub-cheque-from  p.rupess-text{
+    width: calc(100% - 90px);
+    float: left;
+    padding-left: 5px;
+}
+/********Cheque Deposit*******/
+.cheque-list{
+    padding: 15px 20px;   
+}
+.cheque-list .bank-cheques{
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: 1px solid #d1d1d1;
+}
+.cheque-list .bank-cheques img{
+    max-width: 100%;
+}
+.cheque-list .bank-cheques .cheque-list1{
+    padding: 10px 0;
+    border-bottom: 1px solid #d1d1d1;
+}
+.cheque-list .bank-cheques .cheque-list1:last-child{
+    border-bottom: 0;
+}
+.cheque-list .bank-cheques input[type=radio]{
+    top: 40%;
+}
+.cheque-list .bank-cheques label{
+    color: #000;
+    font-size: 14px;
+}
+.cheque-list .bank-cheques span{
+    color: #000;
+    display: block;
+    font-size: 14px;
+}
+.cheque-list .submit_btn {
+    text-align: center;   
+    margin-top: 20px;
+}
+.cheque-list .submit_btn input[type=button],
+.cheque-list .submit_btn input[type=submit]
+{
+    padding-top: 20px;
+    width: 150px;
+    background-color: #1d4f92;
+    color:#fff;
+    text-transform: uppercase;
+    border:0;
+    border-radius: 3px;
+    padding: 12px;    
+}
+/************/
+/****** Select Bank details*******/
+.select-bank{
+    height: calc(100% - 45px);
+    display: table;
+    width: 100%;
+    padding: 15px 10px;
+}
+.select-bank .deposit-select-bank{
+    padding: 10px;
+    background: #fff;
+    border-radius: 7px;
+    border: 1px solid #d1d1d1;
+}
+.select-bank .deposit-select-bank .auq-cheque-type {
+    border: 5px solid #c1c8ff;
+}
+.select-bank .deposit-select-bank .auq-cheque-type .auq-cheque-format {
+    background-color: #dadeff;
+    border: 1px solid #787d9f;
+    padding: 10px;
+}
+.select-bank .deposit-select-bank  .auq-cheque-type .auq-cheque-format .date{
+    display: table;
+    width: 100%;
+    margin-top: 7px;
+}
+.select-bank .deposit-select-bank  .auq-cheque-type .auq-cheque-format .date label{
+    font-size: 12px;
+    color: #000;    
+    width: 20%;
+    float: left;
+}
+.select-bank .deposit-select-bank  .auq-cheque-type .auq-cheque-format .date table {
+  width: 80%;
+  float: left;
+  margin: 0
+}
+.select-bank .deposit-select-bank .auq-cheque-type .auq-cheque-format .date table tr td{
+   border:1px solid #cccccc;
+   padding: 0 5px;
+}
+.select-bank .deposit-select-bank .auq-cheque-type .auq-cheque-format label{
+    font-size: 12px;
+}
+.select-bank .deposit-select-bank .auq-cheque-type .auq-cheque-format p{
+    font-size: 12px;
+    border-bottom: 1px solid #aeb2cc;
+    color: #7d8cff;
+    height: 17px;
+}
+.select-bank .deposit-select-bank .auq-cheque-type .auq-cheque-format .rupess-letter{    
+    border:1px solid #cccccc;
+    color: #7d8cff;   
+    width: 100%;
+    line-height: 25px;
+    margin-top: 15px;
+    font-weight: normal;
+  
+}
+.select-bank .deposit-select-bank .auq-cheque-type .auq-cheque-format .currency-type{
+    color: #000;
+    margin: 0 5px;
+}
+.select-bank .deposit-select-bank .signature-img{
+    height: 40px;
+}
+.select-bank .deposit-select-bank .signature{
+    border-top: 1px solid #aeb2cc;
+    margin-top: 7px;
+}
+.select-bank .deposit-select-bank .submit_btn{
+    text-align: center;
+    margin-top: 30px;
+}
+.select-bank .deposit-select-bank .submit_btn input[type=submit]
+{
+    width: 150px;
+    background-color: #1d4f92;
+    color:#fff;
+    text-transform: uppercase;
+    border:0;
+    border-radius: 3px;
+    padding: 12px;    
+    margin-bottom: 20px;
+}
+.select-bank .deposit-select-bank .check-holder-name{   
+    width: 115px;
+    float: left;  
+}
+.select-bank .deposit-select-bank p.name{
+    width: calc(100% - 150px);
+    float: left;
+    padding-left: 5px;
+}
+.select-bank .deposit-select-bank .currency{
+    width: 90px;
+    float: left;  
+}
+.select-bank .deposit-select-bank p.rupess-text{
+    width: calc(100% - 90px);
+    float: left;
+    padding-left: 5px;
+}
+.select-bank .deposit-select-bank form{
+    margin-top: 20px;
+}
+.select-bank .deposit-select-bank form label{
+    color: #000;
+    font-size: 16px;
+}
+.select-bank .deposit-select-bank form .form-control{
+    border-radius: 0;
+}
+/************/
+/******Sucess Page*********/
+.sucess{
+    padding: 30px;
+    background: #fff;
+    border-radius: 7px;
+    border: 1px solid #d1d1d1;
+}
+.sucess p{
+    color: #000;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 15px;
+}
+.sucess .sucess-icon{  
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;   
+    border-radius: 50%;
+    background: #778f44 url('../images/chekmark.png') no-repeat;
+    background-position: center center;
+}
+.header-logo{
+    position: absolute;
+    right: 12px;
+    top: 12px;
+}
+.header-logo img{
+    width: 18px;
+}
+.footer {
+    padding: 7px;
+    background-color: #1d4f92;
+    z-index: 99999;
+}
+.footer ul{
+    margin: 0 auto;
+    text-align: center;
+}
+.footer ul li{
+    width: 24%;
+}
+.footer ul li a{
+    color: #fff;
+    font-size: 22px;
+}
+.footer ul li a:hover, .footer ul li a:focus{
+    text-decoration: none;
+}
+.footer ul li a span{
+    font-size: 14px;
+    display: block;
+}
+.reg-here{
+    text-align: center;
+    font-size: 16px;
+    margin-top: 15px;
+}
+/*************/
+/*Mobile Menu*/
+.mobile-menu{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #102f97;
+    display: block;
+    transition: 0.3s;
+    border-bottom: 1px solid #102f97;
+}
+.sidenav a i{
+    margin-right: 10px;
+}
+.sidenav a:hover {
+    color: #102f97;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    border-bottom: 0;
+}
+.registration .inner-content input[type=button]{
+    width: auto !important;
+}
+.registration .reg-btns{
+    display: flex;
+    justify-content: center;
+}
+.registration .reg-btns button{
+    margin: 0 10px;
+}
+.modal {
+    text-align: center;
+    padding: 0!important;   
+  }
+  
+  .modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -4px; /* Adjusts for spacing */
+  }
+  .modal-content{
+    border-radius: 0;
+    width: 250px;
+    margin: 0 auto;
+  }
+   #myModal2 .modal-content{
+   	width: auto;
+   }
+  .modal-footer{
+      border-top: 0;
+  }
+  
+  .modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+  }
+  .btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+#img-upload{
+    width: 100%;
+}
+.error-msg{
+	color:red !important;
+	font-weight:bold;
+	text-align:center;
+}
+.transaction-history-grid{
+    background-color: #fff;
+    padding: 20px;
+    margin: 0 20px;
+    /* border: 1px solid #ddd; */
+    border-top: 0;
+}
+#myModal2 .close{
+    margin-right: 4px;
+    z-index: 99999999;
+    position: absolute;
+    right: 0;
+    opacity: 1;
+    color: #1d4f92;
+}
+.transaction-history-grid table thead th{
+    background-color: #f4f5f7;
+}
+#issuedCheque img,
+#depositCheque img{
+	max-width: 100%;
+}
+.pagination-list{
+	text-align:center;
+}
+#myModal2 .modal-content img{
+	width:100%;
+}
+#existingsign{
+	text-align:center;
+}
+#existingsign img{
+	border: 1px solid #000;
+}
+.dashboard-btn{
+	text-align:center;
+}
+.register-here{
+	margin-bottom: 15px !important;
+	    background-color: #1d4f92;
+}
+.current-sig-btn{
+	width:100% !important;	
+	background-color: #1d4f92  !important;	
+	color: #ffffff  !important;	
+	margin-bottom: 10px !important;
+}
+.footable-row-detail-name{
+	font-weight: bold;
+}
+.update-signature{
+	padding: 8px;
+	width: 100% !important;
+    background-color: #1d4f92 !important;
+    color: #ffffff !important;
+    margin-bottom: 10px !important;
+    margin-top: 15px !important;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+}
+.update-signature input[type=checkbox]{
+	    position: relative;    
+    	top: 2px;
+}
+table tbody tr:last-child {
+           border-bottom: 1px solid #ddd;
+       }
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;} 
+ 
+}
+}
+
+ 
+@media screen and (max-width: 450px) {
+	  .cheque-list .submit_btn input[type=button], 
+  .cheque-list .submit_btn input[type=submit]{
+  	width:auto;
+  	padding:10px;
+  	font-size:12px;
+  }
+  .error-msg{
+  	font-size:10px !important;
+  }
+   .footable-first-visible{
+	color: #2c2ce6;
+    text-decoration: underline;
+}
+span.footable-toggle.fooicon{
+	display:none;
+}
+.footable-header .footable-first-visible {
+	color: #333;
+    text-decoration: none;
+}
+}
+/***/
+@media only screen and (min-width: 600px) {
+    body {
+        background-size: cover;
+    }
+   
+}
+.sigbuttons{
+	margin-top:10px !important;
+}
+
+.transaction-history .bank-details span{
+    margin-left: 15px;
+}
+.box{
+    width: 25%;
+    float: left;
+}
+@media only screen and (max-width: 767px){
+    .box{
+    width: 50%;
+    float: left;
+    }
+    .lading-page .category .category-list{
+        width: 320px;
+        padding: 0 20px;
+    }
+    .lading-page .logo-section{
+        height: 35%;
+    }
+    .lading-page .category{
+        height: 60%;
+    }	
+    .lading-page .logo-section .logo img{
+    	width:124px;
+    }
+    .lading-page .category .category-list .title{
+    	font-size:16px;
+    }
+    .deposite-title{
+    	height: 25px !important	;
+    }
+    .auq-cheque-format{
+    	    margin-top: 15px;
+    }
+       .aub-cheque .aub-cheque-from .submit_btn input[type=submit],
+        .aub-cheque .aub-cheque-from .submit_btn input[type=button]{
+       	width:80px;
+       }
+       .cheque-details .inner-content input[type=button]{
+       width: 100px;
+       }
+       .transaction-history-grid{
+       	padding:0;
+       }
+ 
+}
+@media only screen and (min-device-width : 376px) and (max-device-width : 667px){
+	.lading-page .logo-section{
+		    height: 50%;
+	}
+	.lading-page .category{
+		    height: 60%;
+	}
+	.lading-page .category .category-list .title{
+		margin: 5px 0 20px 0;
+	}
+}
+.mobile-table {
+    padding:15px 0;
+    background-color: #fff;
+}
+.mobile-table .mobile-table-heading{
+    background-color: #f4f5f7;
+    padding: 8px;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    border:1px solid #ddd;
+}
+.mobile-table .mobile-table-heading .referencenum{
+	width: 65%;
+    float: left;
+}
+.mobile-table .mobile-table-heading .issuedate{
+	width: 35%;
+    float: left;
+    text-align: center;
+}
+.mobile-table .panel-default>.panel-heading{
+    border-radius: 0;
+    padding:8px;
+    background-color: transparent;
+}
+.mobile-table .panel-title{
+    font-size: 14px;
+}
+.mobile-table .panel{
+    margin-bottom: 0;
+    border-radius: 0;
+    border-top-width: 0px;
+}
+.mobile-table .inner-table{
+    padding: 8px;
+}
+.mobile-table .inner-table table{
+    margin-bottom:0;
+}
+.mobile-table .table>thead>tr>th{
+    border-bottom:0;
+    background-color:transparent
+}
+.mobile-table  .panel-title .trigger:before {
+    content: '\f068';
+    font-family: FontAwesome;
+    vertical-align: text-bottom;
+    margin-right: 5px;
+  }
+  
+.mobile-table .panel-title .trigger.collapsed:before {
+    content: '\f067';
+        margin-right: 5px;
+  }
+.mobile-table a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+  }
+ #accountList tbody tr td ul {
+	width:100%;
+ }
+ #accountList tbody tr td ul li span {
+ 	width:50%;
+ }
+ 
+  /* .NRIC{
+ 	width: 30%;
+    display: inline-block;
+    flot:left;
+ }
+ 
+  .icNumber{
+	width: 69.5%;
+    display: inline-block;
+    float:left;
+ } */
+ #retriveAccounts {width: auto;
+    background-color: #1d4f92;
+    color: #fff;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 3px;
+    padding: 12px;
+    margin: 0 auto;
+    display: block;
+ }
+ 	.palel-primary
+	{
+		border-color: #bce8f1;
+	}
+	.panel-primary>.panel-heading
+	{
+		background:#bce8f1;
+		
+	}
+	.panel-primary>.panel-body
+	{
+		background-color: #EDEDED;
+	}
